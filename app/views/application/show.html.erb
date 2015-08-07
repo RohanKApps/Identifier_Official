@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="home.css">
+	</head>
+	<br>
+	<br>
+	<body>
+		<div class="jumbotron">
+  <h1 class="jumbo-text">Welcome to <b class="logo-text">Identifier</b><sup class="beta-text"> BETA</sup></h1><br>
+  <p class="jumbo-text">The <b style="color:red">#1</b> stop for Self-Diagnosis</p><br>
+  <p class="jumbo-text"><a class="btn btn-primary btn-lg" href="/local" role="button">View Illnesses in Your Area</a></p>
+  <h4 class="location">Your Location: <span><%=cookies['zipcode']%></span></h3>
+  <a href="/landing"><h3 class="change">Change Location</h3></a>
+</div>
+		<div class="container">
+			<div class="row">
+					  <div class="col-md-12">
+						<br>
+						<br>
+					<h2 class="output">Based on other people in your area...</h3>
+						<h2 class="output"><%=Test.last.test%>And your symptoms...</h2>
+						<h2 class="output"><b>...We have compiled a list</b></h4>
+						<br>
+						<br>
+						<ol class="illness-list">
+							<li style="font-weight:bold"><%=Rank.last.oneplace%></li>
+							<li><%=Rank.last.twoplace%></li>
+							<li><%=Rank.last.threeplace%></li>
+						</ol>
+						<br>
+						<br>
+						<h2></h2>
+				</div>
+				
+									</div>
+
+			</div>
+			<br>
+			<br>
+		</div>
+	</body>
+</html>
+
+<style>
+  .col-md-12{
+    background-color:lightgrey;
+  }
+  
+  li{
+    text-align:center;
+    margin-left:-70px;
+  }
+  
+  .location{
+    font-weight:bold;
+    font-family:Consolas;
+  }
+  
+  .change{
+    font-size:15px;
+  }
+</style>

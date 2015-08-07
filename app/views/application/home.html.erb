@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="home.css">
+	</head>
+	<br>
+	<br>
+	<body>
+		<div class="jumbotron">
+  <h1 class="jumbo-text">Welcome to <b class="logo-text">Identifier</b><sup class="beta-text"> BETA</sup></h1><br>
+  <p class="jumbo-text">The <b style="color:red">#1</b> stop for Self-Diagnosis</p><br>
+  <p class="jumbo-text"><a class="btn btn-primary btn-lg" href="/local" role="button">View Illnesses in Your Area</a></p>
+  <h4 class="location">Your Location: <span><%=cookies['zipcode']%></span></h3>
+  <a href="/landing"><h3 class="change">Change Location</h3></a>
+</div>
+  <div class="container">
+			<div class="row">
+					<div class="col-md-12">
+						<form action="/submit" class="form-marg">
+						  <!-- Header -->
+						  <h1 class="title-form">
+						    Quick Symptom Checker
+						  </h1>
+						  
+						  <!-- Age -->
+						  <h3 class="head-form">Your Age</h3>
+						  <div class="age-input">
+						    <div class="input-group">
+						      <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+						      <input name="age" type="text" class="form-control" placeholder="Age" aria-describedby="basic-addon1">
+						    </div>
+						  </div>
+						  
+						  <!-- Symptom Checkboxes -->
+						  <h3 class="head-form">Symptoms</h3>
+						  <div class="symptom-input">
+						    <%= check_box_tag(:cough) %> Coughing<br>
+						    <%= check_box_tag(:sneeze) %> Sneezing<br>
+						    <%= check_box_tag(:congestion) %> Congestion<br>
+						    <%= check_box_tag(:runny_nose) %> Runny Nose<br>
+						    <%= check_box_tag(:nausea) %> Nausea<br>
+						    <%= check_box_tag(:headache) %> Headache<br>
+						    <%= check_box_tag(:fatigue) %> Fatigue<br>
+						    <%= check_box_tag(:muscle_pain) %> Muscle Pain<br>
+						    <%= check_box_tag(:warm_temp) %> Warm Temperature<br>
+						    <%= check_box_tag(:sore_throat) %> Sore Throat<br>
+						  </div>
+						  
+						  <!-- Symptom Intensity -->
+						  <h3 class="head-form">Symptoms Intensity</h3>
+						  <input type=range min=0 max=10 value=5 name="intensity-range" id=intensity>
+						  
+						  <!-- Days Lasted -->
+						  <h3 class="head-form">Days Lasted</h3>
+						  <input type=range min=0 max=8 value=1 name="days-range" id=intensity>
+						  <h6 class="help-text">If longer than 7 days choose 8 (Last Option)</h6>
+						  <br>
+
+						  <!-- Submit -->
+						  <input type="submit" value="Submit" class="submit-btn" style="width: 300px; margin: 0 auto;">
+						  <input type="reset" value="Reset" class="submit-btn" style="width: 300px; margin: 0 auto;" />
+						</form>
+						<br>
+				</div>
+				</div>
+			</div>
+			<br>
+			<br>
+	</body>
+</html>
+
+<script>
+  if(document.getElementById('cough').checked) {
+    window.location = "https://google.com"
+  }
+</script>
+
+<style>
+  .age-input{
+    
+  }
+
+  .col-md-12{
+    background-color:lightgrey;
+  }
+  
+  .form-marg{
+    margin-left:50px;
+  }
+  
+  .title-form{
+    font-family: Consolas;
+    text-decoration: underline;
+    margin-left:-50px;
+    text-align:center;
+  }
+  
+  .head-form{
+    
+  }
+  
+  .help-text{
+    
+  }
+  
+  .submit-btn{
+    margin-left:-50px;
+    font-weight:bold;
+  }
+  
+  .location{
+    font-weight:bold;
+    font-family:Consolas;
+  }
+  
+  .change{
+    font-size:15px;
+  }
+</style>

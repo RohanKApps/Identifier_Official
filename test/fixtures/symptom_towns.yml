@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coughing: 1
+  sneezing: 1
+  congestion: 1
+  warm_temp: 1
+  sweat_excess: 1
+  tooth_pain: 1
+  back_pain: 1
+  chest_pain: 1
+  body_chills: 1
+
+two:
+  coughing: 1
+  sneezing: 1
+  congestion: 1
+  warm_temp: 1
+  sweat_excess: 1
+  tooth_pain: 1
+  back_pain: 1
+  chest_pain: 1
+  body_chills: 1

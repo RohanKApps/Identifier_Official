@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cold: 1
+  fever: 1
+  flu: 1
+  strepthroat: 1
+
+two:
+  cold: 1
+  fever: 1
+  flu: 1
+  strepthroat: 1

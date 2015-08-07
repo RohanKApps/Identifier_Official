@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Identifier</title>
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="local.css">
+		<br>
+		<div class="jumbotron">
+  <h1 class="margin-jumbo">Local Information</h1>
+  <p class="margin-jumbo"><b>Your Area: </b><span class="town"><%=@parsed_result['zip_codes'][0]['city']%></span>, <span class="zipcode"><%=cookies['zipcode']%></span></p>
+  <p style="text-decoration:underline">Towns Within 5 Miles</p>
+  <ul>
+  	<p>None</p>
+  </ul>
+</div>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="head-text">Most Common Ilness</h2>
+					<br>
+					<br>
+					<h3 class="illness">asdsda</h3>
+				</div>
+				<div class="col-md-6">
+					<h2 class="head-text">Common Symptoms</h2>
+					<ol>
+						<br>
+						<li></li>
+						<br>
+						<li></li>
+						<br>
+						<li></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style>
+	.illness{
+		font-weight:bold;
+		font-family:Consolas;
+		text-align:center;
+		font-size:30px;
+	}
+</style>

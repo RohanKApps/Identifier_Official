@@ -1,0 +1,69 @@
+body{
+	background-image: url(http://wallreborn.com/wp-content/uploads/2015/04/gradient-background-2-Cool-Backgrounds.jpg);
+}
+
+.jumbo-text{
+	margin-left: 50px;
+}
+
+.jumbotron{
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.logo-text{
+	font-family: Consolas;
+}
+
+.beta-text{
+	font-size: 10px;
+	color: red;
+}
+
+.col-md-6{
+	height: 700px;
+	width: 585px;
+	background-color: lightsteelblue;
+	border: 5px black solid;
+	border-radius: 20px;
+}
+
+
+.form-margin{
+	margin-left: 40px;
+}
+
+.header-form{
+	margin-left: 20px;
+	font-family: Consolas;
+	color: black;
+}
+
+.control-label{
+	margin-left: -10px;
+}
+
+.output{
+	font-size: 30px;
+	font-weight: 200;
+	color: black;
+	text-align: center;
+}
+
+.illness-list{
+	
+	font-family: Consolas;
+	font-size: 25px;
+}
+
+ol{
+	margin-left: 50px;
+}
+
+.submit{
+	margin-left: 20px;
+	font-size: 20px;
+	background-color: turquoise;
+	font-weight: bold;
+}

@@ -1,0 +1,22 @@
+body{
+	background-image: url(http://wallreborn.com/wp-content/uploads/2015/04/gradient-background-2-Cool-Backgrounds.jpg);
+}
+
+.head-text{
+	font-weight: bold;
+	font-family: Consolas;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.margin-jumbo{
+	margin-left: 40px;
+}
+
+li{
+	margin-left: 100px;
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 20px;
+	color: darkcyan;
+}
